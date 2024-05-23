@@ -1,0 +1,96 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.set-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.set-controls button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.set-controls button:disabled {
+    background-color: #A9A9A9;
+    cursor: not-allowed;
+}
+
+.set-controls button:hover:not(:disabled) {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+#setCounter {
+    font-size: 2em;
+    width: 50px;
+    text-align: center;
+}
+
+.timer {
+    font-size: 6em;
+    margin-bottom: 20px;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons button {
+    padding: 20px 40px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttons button:disabled {
+    background-color: #A9A9A9;
+    cursor: not-allowed;
+}
+
+.buttons button:hover:not(:disabled) {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

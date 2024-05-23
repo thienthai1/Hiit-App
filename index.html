@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="set-controls">
+            <button id="decreaseSetBtn" onclick="decreaseSet()">-</button>
+            <span id="setCounter">0</span>
+            <button id="increaseSetBtn" onclick="increaseSet()">+</button>
+        </div>
+        <div class="timer" id="timer">15</div>
+        <div class="buttons">
+            <button id="startPauseBtn" onclick="startPause()">Start</button>
+            <button id="resetBtn" onclick="reset()" disabled>Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
